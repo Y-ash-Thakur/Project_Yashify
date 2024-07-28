@@ -1,0 +1,18 @@
+<div class="collapsible collapsible--expanded">
+  <header class="collapsible__header">
+    <h2 class="collapsible__heading">Item 1</h2>
+    <img class="collapsible__chevron" src="images/chevron.svg" alt="chevron" />
+  </header>
+  <div class="collapsible__content">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+    voluptatem.
+  </div>
+</div>
+<script>
+  const collapsibles = document.querySelectorAll(".collapsible");
+  collapsibles.forEach((item) =>
+    item.addEventListener("click", function () {
+      this.classList.toggle("collapsible--expanded");
+    })
+  );
+</script>
