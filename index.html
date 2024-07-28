@@ -14,19 +14,27 @@
     />
   </head>
   <body>
-    <div class="callout callout--primary">
-      <div class="grid grid__1x2">
-        <div class="callout__content">
-          <h2 class="callout__heading">Ready To Get Started ?</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
-            quae unde quidem blanditiis voluptatem error aut dolorum quaerat
-            cumque quos.
-          </p>
-        </div>
-        <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
+    <div class="collapsible collapsible--expanded">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">Item 1</h2>
+        <img
+          class="collapsible__chevron"
+          src="images/chevron.svg"
+          alt="chevron"
+        />
+      </header>
+      <div class="collapsible__content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+        voluptatem.
       </div>
     </div>
+    <script>
+      const collapsibles = document.querySelectorAll(".collapsible");
+      collapsibles.forEach((item) =>
+        item.addEventListener("click", function () {
+          this.classList.toggle("collapsible--expanded");
+        })
+      );
+    </script>
   </body>
 </html>
- 
