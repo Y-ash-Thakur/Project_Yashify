@@ -14,64 +14,51 @@
     />
   </head>
   <body>
-    <section class="block block--dark block--skewed-right block-showcase">
+    <section class="block">
       <header class="block__header">
-        <h2>User-friendly Control Panel</h2>
+        <h2>What our Customer are Saying</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos tenetur
+          possimus ipsam explicabo est voluptatibus facere quidem. Odio,
+          repellendus quibusdam?
+        </p>
       </header>
-      <div class="container grid grid__1x2">
-        <picture class="block-showcase__image">
-          <img src="images/ipad.png" alt="" />
-        </picture>
-        <ul>
-          <li class="list">
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#clock"></use>
+      <div class="container">
+        <div class="card testimonial">
+          <div class="grid grid__1x2">
+            <div class="testimonial__image">
+              <img
+                src="images/testimonial.jpg"
+                alt="A happy, smiling customer"
+              />
+              <span class="icon-container icon-container--accent">
+                <svg class="icon icon--white icon--small">
+                  <use xlink:href="images/sprite.svg#quotes"></use>
                 </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title">Easy Start & Managed Updates</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Excepturi, obcaecati ad! Ex quod ducimus quisquam.
-                </p>
-              </div>
+              </span>
             </div>
-          </li>
-          <li class="list">
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#growth"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title">Staging, GIT & WP-CLI</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Excepturi, obcaecati ad! Ex quod ducimus quisquam.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="list">
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#wordpress"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title">Dynamic Caching & More</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Excepturi, obcaecati ad! Ex quod ducimus quisquam.
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
+            <blockquote class="quote">
+              <p class="quote__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe,
+                quod dolor. Quia doloremque delectus a id culpa totam, cumque
+                eveniet.
+              </p>
+              <footer>
+                <div class="media">
+                  <div class="media__image">
+                    <svg class="icon icon-primary quote__line">
+                      <use xlink:href="images/sprite.svg#line"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title quote__author">John Smith</h3>
+                    <p class="quote__organization">ABC company ceo</p>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
       </div>
     </section>
     <script src="js/main.js"></script>
