@@ -452,8 +452,12 @@ a {
   content: close-quote;
 }
 
+.quote__text {
+  font-size: 2.2rem;
+}
+
 .quote__author {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: 500;
   font-style: normal;
   margin-bottom: 0;
@@ -505,6 +509,10 @@ a {
 /* Testimonials */
 .testimonial {
   padding: 3rem;
+}
+
+.testimonial__image {
+  position: relative;
 }
 
 .testimonial__image > img {
